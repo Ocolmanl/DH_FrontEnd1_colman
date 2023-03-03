@@ -1,0 +1,36 @@
+*{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    background-color: rgb(66, 65, 65);
+    height: 22px;
+    text-align: right;
+    padding: 8px;
+    
+}
+.btn{
+    color: yellowgreen;   
+}
+.btn:hover{
+    color:azure
+}
+img{
+    width: 500px;
+}
+h1{
+    color: yellowgreen;
+}
+p{
+    text-align: center;
+    font-size: x-large;
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.conteinerPapa{
+    margin-top: auto;
+    margin-bottom: auto;
+}
