@@ -1,0 +1,65 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.conteinerHeader, .sectionDatos{
+    background-color: rgb(61, 61, 119);
+    color: rgb(250, 250, 250);
+    border-left: solid 15px rgb(61, 61, 119);
+}
+.conteinerHeader{
+    display: flex;
+}
+#imgHeader{
+    width: 100px;
+}
+#title{
+    color: rgb(230, 226, 35);
+    font-size: x-large;
+}
+.subConteiner{
+    margin-top: 30px;
+    margin-left: 10px;
+    line-height: 10px;
+    font-size: large;
+}
+.conteinerSection{
+    display: flex;
+    margin-left: 5px;
+}
+.sectionDatos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: normal;
+    border-right: solid 15px rgb(61, 61, 119);
+    text-align: left;
+}
+.estiloH4{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.estiloLi{
+    line-height: 23px;
+    font-size: small;
+}
+.conteinerMain{
+    margin-left: 10px;
+    background-color: rgb(240, 248, 255);
+
+}
+.estiloSubtitulo, .estiliTituloMain, .estipoPmain{
+    font-weight: bold;
+}
+.estiliTituloMain{
+    text-decoration: underline;
+    text-align: left;
+}
+.estipoPmain{
+    color: rgb(136, 139, 141, 0.8);
+    text-transform: uppercase;
+    font-size: small;
+}
+footer{
+    background-color: rgb(24, 23, 23);
+    color: rgb(250, 250, 250);
+    text-transform: uppercase;
+    text-align: center;
+}
