@@ -1,0 +1,30 @@
+nav{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgba(240, 168, 62, 1);
+}
+.encabezadoMain{
+    background-image: url('../img/bowl-and-pet-daities-on-green-background 1.png');
+    height: 400px;
+    text-align: center;
+}
+#comederos{
+    background-color: rgba(240, 168, 62, 1);
+}
+main a, header a{
+    color: rgb(255, 255, 255);
+}
+main a:hover, header a:hover{
+    color: rgb(68, 68, 134);
+}
+.estiloFooter{
+    background-color: rgba(60, 35, 19, 1);
+    color: rgb(255, 255, 255);
+}
+.estiloPieFooter{
+    background-color: rgba(240, 168, 62, 1);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
