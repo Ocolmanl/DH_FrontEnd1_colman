@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.contenedorNav{
+    background-color: rgba(28, 209, 176, 1);
+    padding: 10px;
+}
+.contenedorHeader{
+    background-color: rgba(0, 102, 159, 1);
+    font-weight: 100;
+    height: 45px;
+    padding: 7px 0 7px 10px;
+    margin: 0;
+    box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.4);
+    box-sizing: content-box;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+.contenedorMain{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    box-sizing: border-box;
+}
+.contenedorArticle{
+    background-color: rgba(243, 243, 243, 1);
+    margin-right: 15px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.2);
+}
+.contenedorImg{
+    margin-bottom: 75px;
+}
+.corazonImg{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    box-sizing: border-box;
+}
+.personajeImg{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 125px;
+    left: 75px;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+main p{
+    text-align: left;
+    margin: 30px 30px 90px;
+}
+.btn{
+    background-color: rgba(0, 102, 159, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 120px;
+    text-align: center;
+    padding: 7px;
+    position: absolute;
+    bottom: 20px;
+    left: 95px;
+    border-radius: 10px;
+}
+footer{
+    background-color: rgba(0, 102, 159, 1);
+    color: rgba(255, 255, 255, 1);
+    padding:10px 0 10px 10px;
+}
