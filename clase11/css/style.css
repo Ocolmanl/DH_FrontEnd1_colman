@@ -67,7 +67,7 @@ main span, .btn{
 }
 .contenedorFooter{
     bottom: 0;
-    padding: 20px 0;
+    padding: 20px 8px;
     position: absolute;
     width: 100%;
 }
