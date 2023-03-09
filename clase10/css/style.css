@@ -15,7 +15,6 @@
     padding: 7px 0 7px 10px;
     margin: 0;
     box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.4);
-    box-sizing: content-box;
     position: fixed;
     z-index: 9999;
     width: 100%;
@@ -24,13 +23,11 @@
     display: flex;
     flex-direction: row;
     margin: 100px;
-    box-sizing: border-box;
 }
 .contenedorArticle{
     background-color: rgba(243, 243, 243, 1);
     margin-right: 15px;
     position: relative;
-    box-sizing: border-box;
     box-shadow: 1px 12px 5px -5px rgba(0,0,0,0.2);
 }
 .contenedorImg{
@@ -42,7 +39,6 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    box-sizing: border-box;
 }
 .personajeImg{
     width: 150px;
@@ -50,7 +46,6 @@
     position: absolute;
     top: 125px;
     left: 75px;
-    box-sizing: border-box;
 }
 h2{
     text-align: center;
