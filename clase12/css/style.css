@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.encabezado, .btnEncabezado, .formatoBtn{
+    color: rgba(255, 255, 255, 1);
+}
+.encabezado, .btnEncabezado{
+    background-color: rgba(0, 0, 0, 1);
+    
+    font-size: small;
+}
+.encabezado, .contenedorHeader, .btnMenu, .contenedorEncabezadoMain{
+    display: flex;
+}
+.encabezado, .contenedorHeader{
+    align-items: center; 
+    justify-content: space-between;
+}
+.encabezado{
+    height: 30px;
+}
+.contenedorBtn{
+    margin-right: 30px;
+}
+.textoEncabezado{
+    margin-left: 100px;
+}
+.btnEncabezado, .btn{
+    border: none;
+    margin-right: 20px;
+}
+.contenedorHeader{
+    background-color: rgba(240, 168, 62, 1);
+    height: 100px;
+}
+.formatoBtn{
+    margin-left: 2px;
+    text-decoration: none;
+}
+.imagenLogo{
+    margin-left: 50px;
+    width: 50%;
+}
+.contenedorEncabezadoMain{
+    background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+    margin: 0;
+    justify-content: end;
+    align-items: center;
+    
+}
