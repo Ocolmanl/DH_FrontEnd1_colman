@@ -30,74 +30,84 @@
                 </ul>
             </nav>
         </header>
-        <main><h1></h1>
+        <main>
             <section class="contenedorEncabezadoMain">
                 <div class="formatoEncabezadoMain">
-                    <h4>Es un placer tenerte aqui!</h4>
+                    <h3>Es un placer tenerte aqui!</h3>
                     <p>Comederos en descuento!</p>
                     <div>
-                    <a href="#">COMEDEROS</a>
+                    <a id="comederoEncabezado" href="#">COMEDEROS</a>
                     </div>
-                </div>
-                
+                </div>   
             </section>
-            <div>
+            <section class="productosDestacados">
                 <img src="img/patitaPerropng.png" alt="footDog">
                 <h2>Productos Destacados</h2>
-                <a href="#">Comederos</a>
-                <a href="#">Accesorios</a>
-                <a href="#">Comida</a>
-            </div>
-            <section>
-                <article>
+                <a class="btnProductoDestacados" href="#">Comederos</a>
+                <span class="gionProductoDestacados">&#8211;</span>
+                <a class="btnProductoDestacados" href="#">Accesorios</a>
+                <span class="gionProductoDestacados">&#8211;</span>
+                <a class="btnProductoDestacados" href="#">Comida</a>
+            </section>
+            <section class="articulosContenedor">
+                <article class="articulos">
                     <img src="img/churrasquito.png" alt="Imagen producto 1">
-                    <p>Juguete Churrasquito</p>
-                    <br>
-                    <p>$150</p>
-                </article>
-                <article>
+                    <p class="textoArticulo">Juguete Churrasquito</p>
+                    <p class="textoPrecio">$150</p>
+                </article >
+                <article class="articulos">
                     <img src="img/comedero.png" alt="Imagen Producto 2">
-                    <p>Comedero para perro</p>
-                    <br>
-                    <p>$275</p>
+                    <p class="textoArticulo">Comedero para perro</p>
+                    <p class="textoPrecio">$275</p>
                 </article>
-                <article>
+                <article class="articulos">
                     <img src="img/Huesito.png" alt="Imagen producto 3">
-                    <p>Juguete Huesito</p>
-                    <br>
-                    <p>$650</p>
+                    <p class="textoArticulo">Juguete Huesito</p>
+                    <p class="textoPrecio">$650</p>
                 </article>
             </section>
-            <section>
-                <form action="#" method="post">
-                    <input type="text" placeholder="Nombre y Apellido">
-                    <input type="email" placeholder="Ingresa tu correo electronico">
-                    <input type="number" placeholder="Telefono">
-                    <button type="reset">Resetear</button>
-                    <button type="submit">Enviar</button>
+            <section class="contenedorFormulario">
+                <h4 class="textoFormulario">Contactanos</h4>
+                <form class="formulario" action="#" method="post">
+                    <input class="celdaFormulario" type="text" placeholder="Nombre y Apellido">
+                    <br>
+                    <input class="celdaFormulario" type="email" placeholder="Ingresa tu correo electronico">
+                    <br>
+                    <input class="celdaFormulario" type="number" placeholder="Telefono">
+                    <br>
+                    <div>
+                        <button class="btnFormulario" type="reset">Resetear</button>
+                        <button class="btnFormulario" type="submit">Enviar</button>
+                    </div>
                 </form>
             </section>
         </main>
-        <section>
+        <section class="contenedorSuscripciones">
+            <div class="subContenedorSuscripciones">
+                <img class="imagenSuscripciones" src="img/sentEmail.png" alt="Img Envair mail">
+                <span class="textoSuscripciones">Suscribite para mas novedades</span>
+            </div>
             <form action="#" method="post">
-                <img src="img/sentEmail.png" alt="Img Envair mail">
-                <p>Suscribite para mas novedades</p>
-                <input type="email" placeholder="ingresa tu correo electronico">
-                <button type="submit">Suscribirme</button>
+                <input class="btnSuscripciones" type="email" placeholder="ingresa tu correo electronico">
+                <button class="btnSuscripciones1" btnFondoSusc" type="submit">Suscribirme</button>
             </form>
         </section>
         <footer>
             <section class="estiloFooter">
-                <img src="img/localizacion.png" alt="Localizacion">
-                <p>Localidad</p>
-                <p>Calle - provincia</p>
-                <img src="img/Telefono.png" alt="lgo llamada telefonica">
-                <p>Numero de telefono</p>
-                <p>15-111-111-111</p>
-                <img src="img/mail.png" alt="logo mail">
-                <p>Correo Electronico</p>
-                <p>sarasa@msn.com</p>
-                <img src="img/Logo.png" alt="">
+                <div>
+                    <img src="img/localizacion.png" alt="Localizacion">
+                    <p>Localidad</p>
+                    <p>Calle - provincia</p>
+                    <img src="img/Telefono.png" alt="lgo llamada telefonica">
+                    <p>Numero de telefono</p>
+                    <p>15-111-111-111</p>
+                    <img src="img/mail.png" alt="logo mail">
+                    <p>Correo Electronico</p>
+                    <p>sarasa@msn.com</p>
+                </div>
+                <div>
+                    <img src="img/Logo.png" alt="logo">
+                </div>
             </section>
             <section class="estiloPieFooter">
                 <p>Todos los derechos reservados Front End</p>

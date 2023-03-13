@@ -4,15 +4,19 @@
     margin: 0;
     padding: 0;
 }
-.encabezado, .btnEncabezado, .formatoBtn{
+.container{
+}
+.encabezado, .btnEncabezado, .formatoBtn, #comederoEncabezado, .btnFormulario, .textoSuscripciones, .estiloPieFooter{
     color: rgba(255, 255, 255, 1);
 }
-.encabezado, .btnEncabezado{
+#comederoEncabezado:hover, .formatoBtn:hover, .btnProductoDestacados:hover, .btnFormulario:hover{
+    color: rgba(10, 87, 87, 1);
+}
+.encabezado, .btnEncabezado, .estiloPieFooter{
     background-color: rgba(0, 0, 0, 1);
-    
     font-size: small;
 }
-.encabezado, .contenedorHeader, .btnMenu, .contenedorEncabezadoMain{
+.encabezado, .contenedorHeader, .btnMenu, .contenedorEncabezadoMain, .articulosContenedor, .contenedorFormulario, .contenedorSuscripciones, .estiloFooter{
     display: flex;
 }
 .encabezado, .contenedorHeader{
@@ -36,7 +40,7 @@
     background-color: rgba(240, 168, 62, 1);
     height: 100px;
 }
-.formatoBtn{
+.formatoBtn, .btnProductoDestacados {
     margin-left: 2px;
     text-decoration: none;
 }
@@ -49,8 +53,117 @@
     background-repeat: no-repeat;
     background-size: 100%;
     height: 400px;
-    margin: 0;
     justify-content: end;
     align-items: center;
-    
+}
+.formatoEncabezadoMain, .productosDestacados{
+    text-align: center;
+    line-height: 50px;
+}
+main h3{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px 5px 5px 5px;
+    font-size: xx-large;
+    font-weight: 300;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+#comederoEncabezado{
+    background-color:rgba(240, 168, 62, 1);
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    text-decoration: none;
+}
+.btnProductoDestacados , .gionProductoDestacados{
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+main h2{
+    color: rgba(60, 35, 19, 1);
+    font-size: 45px;
+    font-weight: 700;
+}
+.articulosContenedor{
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+.articulos{
+    background-color: rgba(251, 250, 246, 1);
+    text-align: center;
+    line-height: 20px;
+}
+.textoArticulo, .textoPrecio{
+    font-weight: 600;
+}
+.textoPrecio{
+    color: rgba(240, 168, 62, 1);
+}
+.contenedorFormulario{
+    flex-direction: column;
+    margin-top: 80px;
+    text-align: center;
+}
+.formulario{
+    align-items: center;
+    display: flex;    
+    flex-direction: column;
+    margin-top: 10px;
+}
+.textoFormulario{
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgba(60, 35, 19, 1);
+}
+.celdaFormulario, .btnSuscripciones, .btnSuscripciones1{
+    font-size: small;
+    border-radius: 10px 10px 10px 10px;
+    height: 45px;
+} 
+.celdaFormulario, .btnSuscripciones1, .estiloFooter{
+    background-color: rgba(60, 35, 19, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.celdaFormulario{
+    width: 500px;
+}
+.btnFormulario{
+    background-color: rgba(128, 128, 128, 0.8);
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    height: 25px;
+    width: 100px;
+}
+.btnFormulario:hover, .contenedorSuscripciones{
+    background-color: rgba(240, 168, 62, 1);
+}
+.contenedorSuscripciones{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.subContenedorSuscripciones{
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+.imagenSuscripciones{
+    width: 40px;
+    margin: 10px;
+}
+.btnSuscripciones, .btnSuscripciones1{
+    margin-right: 10px;
+}
+.btnSuscripciones{
+    width: 300px
+}
+.btnSuscripciones1{
+    width: 100px
+}
+.estiloFooter{
+    align-items: center;
+    justify-content: space-between;
+    display: flexbox;
+}
+.estiloPieFooter{
+    text-align: center;
 }
