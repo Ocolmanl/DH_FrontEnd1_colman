@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilo Header */
+h3{
+    background-color: #D1891C;
+    padding: 7px 0 7px 25px;
+    justify-content: center;
+}
+.titulo{
+    background-color: #00669F;
+    box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.55);
+    color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    font-weight: 300;
+}
+/* Estilo Main */
+section article{
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+}
+section article .contenedor{
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+section article i{
+    color: #ff0000;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+section article .Batman{
+    background-image: url("../img/FondoBatman.png");
+}
+section article .Maravilla{
+    background-image: url("../img/FondoMujerMaravilla.png");
+}
+section article .Superman{
+    background-image: url("../img/FondoSuperman.png");
+}
+section article .Harley{
+    background-image: url("../img/FondoHarlenQuinn.png");
+}
+section article img{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 17%;
+}
+section article h2{
+    margin-top: 30%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+section article p{
+    margin-top: 5%;
+    padding: 0 5%;
+}
+section article a{
+    background-color: #00669F;
+    border-radius: 5px;
+    color: #F3F3F3;
+    margin: 5%;
+    padding: 3%;
+    text-decoration: none;
+}
+section article a:hover{
+    background-color: #D1891C;
+    color: #00669F;
+}
+/* Estilo Footer */
+footer{
+    align-items: center;
+    background-color: #00669F;
+    color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer .textoFooter{
+    font-size: x-small;
+}
+footer span{
+    text-transform: uppercase;
+}
+footer .LogoGit{
+    font-size: x-large;
+    font-weight: bold;
+}
+/* Media Querie */
+@media (max-width:428){
+    /* Main */
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width: 429px) and (max-width:820px){
+    /* Main */
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    section article{
+        width: 40%;
+    }
+    /* Footer */
+    footer .textoFooter{
+        font-size: small;
+        padding-left: 20%;
+    }
+}
