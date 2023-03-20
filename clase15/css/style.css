@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Header*/
+.containerBar{
+    display: none;
+}
+.containerHeader{
+    align-items: center;
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containerHeader img{
+    width: 60%;
+}
+.containerHeader nav{
+    text-align: center;
+    width: 20%;
+}
+.containerHeader nav ul ul{
+    background-color: #F0A83E;
+    border-radius: 0px 0px 5px 5px;
+    display: none;
+    line-height: 25px;
+    padding: 5px 0 5px;
+    position: absolute;
+    right: 0%;
+    width: 100%;
+}
+.containerHeader nav ul li:hover > ul{
+    display: inherit;
+}
+.containerHeader nav ul ul img{
+    display: none;
+}
+.containerHeader nav ul ul li{
+    text-align: center;
+}
+.containerHeader nav ul ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.containerHeader nav ul ul li a:hover{
+    color: black;
+}
+/*Main*/
+.encabezadoMain{
+    background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 35px;
+    padding: 20px;
+    text-align: end;
+    width: 100%;
+}
+.encabezadoMain h3, .encabezadoMain a, .encabezadoMain p{
+    margin: 0 25px
+}
+.encabezadoMain h3{
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: x-large;
+    font-weight: 400;
+    padding: 5px 20px;
+}
+.encabezadoMain a{
+    background-color: #F0A83E;
+    border-radius: 5px 5px 5px 5px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px;
+}
+.encabezadoMain a:hover{
+    color: #000000;
+}
+.cartelMain{
+    text-align: center;
+    line-height: 35px;
+}
+.cartelMain h2{
+    font-size: xxx-large;
+    line-height: 55px;
+}
+.cartelMain a, .cartelMain span{
+    color: #000000;
+    opacity: 0.4;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.cartelMain a:hover{
+    color: #F0A83E;
+    opacity: 1;
+}
