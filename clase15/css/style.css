@@ -24,7 +24,6 @@
 }
 .containerHeader nav ul ul{
     background-color: #F0A83E;
-    border-radius: 0px 0px 5px 5px;
     display: none;
     line-height: 25px;
     padding: 5px 0 5px;
@@ -49,10 +48,11 @@
     color: black;
 }
 /*Main*/
+/*Main-Encabezado*/
 .encabezadoMain{
     background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
     display: flex;
-    height: 250px;
+    height: 301px;
     justify-content: center;
     flex-direction: column;
     line-height: 35px;
@@ -68,7 +68,7 @@
     border-radius: 5px;
     font-size: x-large;
     font-weight: 400;
-    padding: 5px 20px;
+    padding: 5px 18px;
 }
 .encabezadoMain a{
     background-color: #F0A83E;
@@ -80,6 +80,7 @@
 .encabezadoMain a:hover{
     color: #000000;
 }
+/*Main-Cartel*/
 .cartelMain{
     text-align: center;
     line-height: 35px;
@@ -97,4 +98,236 @@
 .cartelMain a:hover{
     color: #F0A83E;
     opacity: 1;
+}
+/*Main-Articulos*/
+.productosMain{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.productosMain article{
+    background-color: #FBFAF6;
+    text-align: center;
+    line-height: 25px;
+    margin: 10px 0;
+}
+.productosMain p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.productosMain .importe{
+    color: #F0A83E;
+    font-size: 0.9rem;
+}
+/*Main-Formulario*/
+.formularioMain{
+    text-align: center;
+    line-height: 35px;
+}
+.formularioMain h4{
+    color:#3C2313;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.formularioMain input{
+    background-color: #3C2313;
+    border-radius: 5px;
+    color: #FBFAF6;
+    height: 35px;
+    margin: 7px 0;
+    width: 60%;
+}
+.formularioMain button{
+    background-color: #F0A83E;
+    border: none;
+    border-radius: 5px;
+    color: #3C2313;
+    padding: 5px;
+}
+.formularioMain button:hover{
+    background-color: #3C2313;
+    color: #FBFAF6;
+}
+/*Main-Suscripcion*/
+.suscripcionMain{
+    background-color: #F0A83E;
+    padding: 5px 0;
+}
+.suscripcionMain div, .suscripcionMain form{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.suscripcionMain img{
+    width: 10%;
+}
+.suscripcionMain span{
+    color: #FBFAF6;
+    font-weight: bold;
+    font-size: large;
+}
+.suscripcionMain input{
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    width: 60%;
+}
+.suscripcionMain button {
+    background-color: #3C2313;
+    border: none;
+    border-radius: 10px;
+    color: #FBFAF6;
+    padding: 8px;
+}
+.suscripcionMain button:hover{
+    background-color: #8A8787;
+    color: #3C2313;
+}
+/*Footer*/
+/*Footer-DatosEmpresa*/
+.datosEmpresa {
+    background-color: #3C2313;
+    padding: 30px 0;
+}
+.datosEmpresa article{
+    align-items: center;
+    display: flex;
+    padding: 5px 0 5px 100px;
+    width: 100%;
+}
+.datosEmpresa img{
+    width: 15%;
+}
+.datosEmpresa p, .datosEmpresa span {
+    color: #FBFAF6;
+    padding-left: 5px;
+}
+.datosEmpresa span{
+    color: #8A8787;
+    font-size: small;
+}
+.imglaptop{
+    display: none;
+}
+/*Footer-PieFooter*/
+.pieFooter{
+    background-color: #F0A83E;
+    text-align: center;
+}
+.pieFooter img{
+    width: 50%;
+}
+.pieFooter p {
+    color: #FBFAF6;
+    font-size: small;
+}
+/* Media Queria */
+@media (min-width: 430px) and (max-width: 1980px){
+    /*Header*/
+    .containerBar{
+        background-color: #000000;
+        color: #FBFAF6;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    .containerHeader ul svg{
+        display: none;
+    }
+    .containerHeader nav ul li:hover > ul{
+        display: none;
+    }
+    .containerHeader nav ul ul {
+        display: inherit;
+        display: flex;
+        position: relative;
+        right: 80%;
+    }
+    .containerHeader nav ul ul li{
+        padding-right: 20px;
+        display: inherit;
+    }
+    .containerHeader nav ul ul li:hover{
+        color: #3C2313;
+        
+    }
+    .containerHeader nav ul ul img{
+        display: inherit;
+        padding-right: 5px;
+        width: 35%;
+        height: 90%;
+    }
+    /*Main*/
+    /*Main-Encabezado*/
+    .encabezadoMain{
+        align-items: flex-end;
+        background-size: cover;
+        text-align: end;
+    }
+    .encabezadoMain h3{
+        width: 350px;
+        margin-left: 40px;
+    }
+    /*Main-Articulos*/
+    .productosMain{
+        flex-direction: row;
+    }
+    /*Main-Formulario*/
+    .formularioMain h4{
+        margin-top: 20px;
+    }
+    .formularioMain input{
+        width: 40%;
+    }
+    .formularioMain button{
+        margin: 20px 40px 50px;
+        padding: 10px;
+    }
+    /*Main-Suscripcion*/
+    .suscripcionMain{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .suscripcionMain input{
+        width: 350px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+    .suscripcionMain button{
+        padding: 15px;
+    }
+    /*Footer*/
+    /*Footer-DatosEmpresa*/
+    .contenederpDatosEmpresa {
+        background-color: #37d6a1;
+        display: flex;
+    }
+    .datosEmpresa{
+        background-color: #37d6a1;
+    }
+    .imglaptop{
+        display: inherit;
+        position: relative;
+        padding: 120px 10px 120px 700px;
+    }
+    .datosEmpresa article{
+        padding: 5px 10px;
+    }
+    .datosEmpresa img{
+        width: 30%;
+    }
+    /*Footer-PieFooter*/
+    .pieFooter img{
+        display: none;
+    }
+    .pieFooter p{
+        background-color: #000000;
+        color: #FBFAF6;
+        padding: 10px 0;
+    }
 }
