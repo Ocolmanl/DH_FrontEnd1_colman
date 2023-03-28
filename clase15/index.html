@@ -29,10 +29,10 @@
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                         </svg>
                             <ul type="none">
-                                <li ><img src="img/pawprint 1.png" alt="img patita"><a href="#">Categoria</a></li>
-                                <li ><img src="img/pawprint 1.png" alt="img patita"><a href="#">Pets</a></li>
-                                <li ><img src="img/pawprint 1.png" alt="img patita"><a href="#">Nosotros</a></li>
-                                <li ><img src="img/pawprint 1.png" alt="img patita"><a href="#">Contactanos</a></li>
+                                <li ><a href="#">Categoria</a></li>
+                                <li ><a href="#">Pets</a></li>
+                                <li ><a href="#">Nosotros</a></li>
+                                <li ><a href="#">Contactanos</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -75,15 +75,15 @@
             </section>
             <section class="formularioMain">
                 <h4 >Contáctanos</h4>
-                <form action="#" method="post">
+                <form action="#" method="POST">
                     <p>
-                        <input type="text" placeholder="Nombre y Apellido">
+                        <input type="text" name="Nombre y Apellido" placeholder="Apellido y Nombre" required>
                     </p>
                     <p>
-                        <input type="email" placeholder="Ingresa tu correo electronico">
+                        <input type="email" name="email" placeholder="Ingresa tu correo electronico" required>
                     </p>
                     <p>
-                        <input type="number" placeholder="Telefono">
+                        <input type="tel" name="telefono" placeholder="Telefono">
                     </p>
                     <p>
                         <button type="reset">Resetear</button>
@@ -96,8 +96,8 @@
                     <img src="img/sentEmail.png" alt="Img Envair mail">
                     <span>Suscribite para mas novedades</span>
                 </div>
-                <form action="#" method="post">
-                    <input type="email" placeholder="ingresa tu correo electronico">
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="ingresa tu correo electronico">
                     <button type="submit">Suscribirme</button>
                 </form>
             </section>
@@ -127,14 +127,13 @@
                         </div>
                     </article>
                 </section>
-                <div>
-                    <img class="imglaptop" src="img/Logo.png" alt="logo">
+                <div class="logo">
+                    <img src="img/Cat.png"alt="cat">
+                    <p><span>Front</span>Cat&Dog</p>
+                    <img src="img/Dog.png" alt="">
                 </div>
             </div>
             <section class="pieFooter">
-                <div>
-                    <img src="img/Logo.png" alt="logo">
-                </div>
                 <p>Todos los derechos reservados Front End</p>
             </section>
         </footer>

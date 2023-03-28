@@ -18,34 +18,8 @@
 .containerHeader img{
     width: 60%;
 }
-.containerHeader nav{
-    text-align: center;
-    width: 20%;
-}
 .containerHeader nav ul ul{
-    background-color: #F0A83E;
     display: none;
-    line-height: 25px;
-    padding: 5px 0 5px;
-    position: absolute;
-    right: 0%;
-    width: 100%;
-}
-.containerHeader nav ul li:hover > ul{
-    display: inherit;
-}
-.containerHeader nav ul ul img{
-    display: none;
-}
-.containerHeader nav ul ul li{
-    text-align: center;
-}
-.containerHeader nav ul ul li a{
-    color: #ffffff;
-    text-decoration: none;
-}
-.containerHeader nav ul ul li a:hover{
-    color: black;
 }
 /*Main*/
 /*Main-Encabezado*/
@@ -61,7 +35,7 @@
     width: 100%;
 }
 .encabezadoMain h3, .encabezadoMain a, .encabezadoMain p{
-    margin: 0 25px
+    margin: 0 25px;
 }
 .encabezadoMain h3{
     background-color: #ffffff;
@@ -151,6 +125,12 @@
     background-color: #3C2313;
     color: #FBFAF6;
 }
+.formularioMain input[type="email"]:invalid, .formularioMain input[type="text"]:invalid, .formularioMain input[type="tel"]:invalid{
+    box-shadow: 0px 0px 5px 0px rgba(252,8,8,1);
+}
+.formularioMain input[type="email"]:valid, .formularioMain input[type="text"]:valid, .formularioMain input[type="tel"]:valid{
+    box-shadow: 0px 0px 5px 0px #008000;
+}
 /*Main-Suscripcion*/
 .suscripcionMain{
     background-color: #F0A83E;
@@ -188,8 +168,10 @@
 }
 /*Footer*/
 /*Footer-DatosEmpresa*/
-.datosEmpresa {
+.contenederpDatosEmpresa{
     background-color: #3C2313;
+}
+.datosEmpresa {
     padding: 30px 0;
 }
 .datosEmpresa article{
@@ -209,8 +191,17 @@
     color: #8A8787;
     font-size: small;
 }
-.imglaptop{
-    display: none;
+.logo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+footer div div span {
+    color: #ffffff;
+}
+footer div div p{
+    color: #F0A83E;
 }
 /*Footer-PieFooter*/
 .pieFooter{
@@ -237,28 +228,21 @@
     .containerHeader ul svg{
         display: none;
     }
-    .containerHeader nav ul li:hover > ul{
-        display: none;
-    }
     .containerHeader nav ul ul {
         display: inherit;
         display: flex;
-        position: relative;
-        right: 80%;
     }
-    .containerHeader nav ul ul li{
+    .containerHeader nav ul ul li a{
+        color: #FBFAF6;
         padding-right: 20px;
-        display: inherit;
+        text-decoration: none;
     }
-    .containerHeader nav ul ul li:hover{
-        color: #3C2313;
-        
-    }
-    .containerHeader nav ul ul img{
-        display: inherit;
+    .containerHeader nav ul ul li a::before{
+        content: url(../img/pawprint\ 1.png);
         padding-right: 5px;
-        width: 35%;
-        height: 90%;
+    }
+    .containerHeader nav ul ul li a:hover{
+        color: #3C2313;
     }
     /*Main*/
     /*Main-Encabezado*/
@@ -304,16 +288,9 @@
     /*Footer*/
     /*Footer-DatosEmpresa*/
     .contenederpDatosEmpresa {
-        background-color: #37d6a1;
         display: flex;
-    }
-    .datosEmpresa{
-        background-color: #37d6a1;
-    }
-    .imglaptop{
-        display: inherit;
-        position: relative;
-        padding: 120px 10px 120px 700px;
+        justify-content: space-between;
+        padding-right: 5%;
     }
     .datosEmpresa article{
         padding: 5px 10px;

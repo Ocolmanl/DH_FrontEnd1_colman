@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <section class="barDescuento">
+        <p>20% de descuento en todos los productos</p>
+    </section>
+    <header >
+        <img src="img/OBJECTS.png" alt="">
+        <h1 >Nombre tienda</h1>
+    </header>
+    <main class="contenedorMain">
+        <form action="archivo.php" method="POST">        
+            <fieldset>
+                <legend>Añadí tu super!</legend>
+                <p>Agrega tu personaje favorito completando las opciones</p>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </p>
+                    <p>
+                        <label for="especie">Especie</label>
+                        <select name="especie" id="especie" placeholder="Especie">
+                            <option>Villanos</option>
+                            <option >Heroes</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha" id="fecha">
+                    </p>
+                    <p>
+                        <label>Agrega Foto</label>
+                        <input type="file" name="foto" accept=".jpg .png" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <textarea name="Descripcion" id="Descripcion" placeholder="Descripcion"></textarea>
+                    </p>
+                    <p>
+                        <label>Poderes</label>
+                        <input type="checkbox" id="volar" name="volar" >
+                        <label for="volar">Volar </label>
+                        <input type="checkbox" name="superInteligencia">
+                        <input type="checkbox" name="vistaRayoLáser">
+                        <input type="checkbox" name="billeteraGorda">
+
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+            </fieldset>    
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
