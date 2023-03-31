@@ -47,7 +47,7 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li a::before{
+nav ul li a:before{
     content:'';
     background-color: var(--decoration-color);
     position:absolute;
@@ -130,7 +130,7 @@ nav ul li a:hover::before{
     border-right: 10px solid rgb(66,139,202);
     border-bottom: 10px solid rgb(202, 66, 129);
     border-left: 10px solid rgba(66,139,202,.2);
-    animation: spinner 0.7s infinite; 
+    animation: spinner 0.6s infinite; 
 }
 /* keyframes
     crear la animación con la rotación desde el momento 0 y momento 100
