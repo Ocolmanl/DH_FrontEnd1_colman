@@ -105,14 +105,14 @@ font-size: 2rem;
     font-weight: 700;
     font-size: 2rem;
     line-height: 114.6%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .encabezadoMain p{
     font-size: 1rem;
     font-weight: 400;
     line-height: 151.1%;
 }
-/* Section reporteria */
+/* Reporteria */
 .reporteria{
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@ font-size: 2rem;
     line-height: 170%;
     margin-bottom: 30px;
 }
-/* Section Mejores del Mes */
+/* Mejores del Mes */
 .articulos{
     display: flex;
     flex-direction: column;
@@ -202,7 +202,6 @@ font-size: 2rem;
     color: #ffffff;
     text-align: center;
     padding: 30px 80px;
-    
 }
 .mejorEquipo p{
     font-size: 2.4rem;
@@ -279,64 +278,29 @@ footer .legales{
     opacity: 0.7;
     padding: 40px;
 }
-/* Media Querie para Laptop*/
-@media (min-width: 1280px){
-    /* Header */
-    /* Barra de navegacion */
-    .barNav{
-        justify-content: space-around;
+/* Media Querie para Tablets*/
+@media (min-width: 480px){
+    /*Encabezado Main*/
+    .encabezadoMain{
+        align-items: center;
     }
-    .barNav i{
-        display: none;
+    .encabezadoMain p{
+        text-align: center;
     }
-    .barNav nav, .barNav .btnHamburguesa{
-        display: inherit;
-    }
+}
+@media (min-width: 1024px){
     /* Main */
     /* Banner */
     .banner{
         flex-direction: row;
         justify-content: center; 
     }
-    .banner .btnBanner:hover, .barNav .btnHamburguesa:hover, .articulos a:hover{
-        background-color: rgba(139, 72, 191, 0.5);
-        color: #232C50;
-        transition: background-color 0.7s ease-in-out;
-        transition: color 0.7s ease-in-out;
-    }
     .banner div{
         margin-right: 100px;
     }
-    /* Encabezado Main */
+    /*Encabezado Main*/
     .encabezadoMain{
-        align-items: center;
         background-color: #8B48BF;
-        flex-direction: row;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-    .encabezadoMain h3{
-        padding-top: 35px;
-        width: 1200px;
-    }
-    /* Section reporteria */
-    .reporteria{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .reporteria article{
-        width: 550px;
-    }
-    .reporteria h4{
-        background-color:#ffffff;
-    }
-    .reporteria p{
-        padding-left: 14%;
-    }
-    /* Section Mejores del Mes */
-    .articulos #Sanyo, .articulos #Navarro{
-        display: inline-block; 
     }
     /*Mejor equipo del año*/
     .mejorEquipo{
@@ -354,6 +318,61 @@ footer .legales{
         color: #232C50;
     }
     /* Footer*/
+    footer .barraNavegacion{
+        justify-content: space-evenly;
+    }
+}
+/* Media Querie para Laptop*/
+@media (min-width: 1280px){
+    /* Header */
+    /* Barra de navegacion */
+    .barNav{
+        justify-content: space-around;
+    }
+    .barNav i{
+        display: none;
+    }
+    .barNav nav, .barNav .btnHamburguesa{
+        display: inherit;
+    }
+    /* Main */
+    /* Banner */
+    .banner .btnBanner:hover, .barNav .btnHamburguesa:hover, .articulos a:hover{
+        background-color: rgba(139, 72, 191, 0.5);
+        color: #232C50;
+        transition: background-color 0.7s ease-in-out;
+        transition: color 0.7s ease-in-out;
+    }
+    /* Encabezado Main */
+    .encabezadoMain{
+        flex-direction: row;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .encabezadoMain h3{
+        padding-top: 35px;
+        width: 1200px;
+    }
+    /* Reporteria */
+    .reporteria{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reporteria article{
+        width: 550px;
+    }
+    .reporteria h4{
+        background-color:#ffffff;
+    }
+    .reporteria p{
+        padding-left: 14%;
+    }
+    /* Mejores del Mes */
+    .articulos #Sanyo, .articulos #Navarro{
+        display: inline-block; 
+    }
+    /* Footer*/
     footer .encabezadoFooter{
         flex-direction: row;
     }
@@ -367,3 +386,4 @@ footer .legales{
         text-align: end;
     }
 }
+/*Nora: Espero la pagina creada cumpla con las expectativas del examen y aunque considero que casi todos los puntos del examen se cumplen es hora de ver si lo implemente bien. Di lo mejor de mi y lo disfrute mucho */
